@@ -1,0 +1,9 @@
+import time
+import requests
+originalTime=1554242428
+oneDay=86400
+
+while True:
+	if (int(time.time())-originalTime)%oneDay==0:
+		requests.post("YOUR URL")
+		time.sleep(1)
